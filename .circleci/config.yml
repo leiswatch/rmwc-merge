@@ -6,6 +6,10 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "Set private repository"
+          command: echo "@uxpin:registry=https://registry.uxpin.pl:4873
+//registry.uxpin.pl:4873/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+      - run:
           name: "Install dependencies"
           command: yarn install
       - run:
