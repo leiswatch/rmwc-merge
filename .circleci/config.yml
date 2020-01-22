@@ -10,4 +10,4 @@ jobs:
           command: yarn install
       - run:
           name: 'Push to UXPin'
-          command: yarn run push
+          command: ./node_modules/@uxpin/merge-cli/bin/uxpin-merge push --webpack-config ./webpack.config.js --wrapper ./src/Wrapper/UXPinWrapper.js --token $TOKEN --uxpin-domain=$DOMAIN
