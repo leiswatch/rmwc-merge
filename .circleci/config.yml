@@ -6,7 +6,7 @@ jobs:
     dependencies:
       pre:
         - echo "@uxpin:registry=https://registry.uxpin.pl:4873" > ~/.npmrc
-        - echo "//registry.uxpin.pl:4873/:_authToken="${NPM_TOKEN}" >> ~/.npmrc
+        - echo "//registry.uxpin.pl:4873/:_authToken="${NPM_TOKEN}"" >> ~/.npmrc
     steps:
       - checkout
       - run:
