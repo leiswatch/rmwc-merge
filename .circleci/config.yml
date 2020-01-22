@@ -3,12 +3,12 @@ jobs:
     docker:
       - image: circleci/node:8.15-stretch-browsers-legacy
     working_directory: ~/project/
-    dependencies:
-      pre:
-        - echo "@uxpin:registry=https://registry.uxpin.pl:4873" > ~/.npmrc
-        - echo "//registry.uxpin.pl:4873/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
     steps:
       - checkout
+      - run:
+          command: echo "@uxpin:registry=https://registry.uxpin.pl:4873" > ~/.npmrc
+      - run:
+          command: echo "//registry.uxpin.pl:4873/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
       - run:
           name: "Install dependencies"
           command: yarn install
