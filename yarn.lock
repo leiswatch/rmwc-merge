@@ -1559,7 +1559,7 @@
   version "8.10.40"
   resolved "https://registry.npmjs.org/@types/node/-/node-8.10.40.tgz#4314888d5cd537945d73e9ce165c04cc550144a4"
 
-"@uxpin/merge-cli@^1.3.0":
+"@uxpin/merge-cli@^2.4.1":
   version "2.4.1"
   resolved "https://registry.uxpin.pl:4873/@uxpin%2fmerge-cli/-/merge-cli-2.4.1.tgz#71195fe27f451daa58b8344d6de3b35434010a7b"
   integrity sha512-I0YaYJ9oi0BmpZEx73hMjtuI4b32skbONHBvMOhT8afdZJ+tHhiO+M29l4+AIpanTzYB7uc6SHwPrXp4YLbIoQ==
